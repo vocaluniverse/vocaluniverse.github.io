@@ -1,0 +1,135 @@
+:root{
+    --color-btn: ;
+    --color-w: #fff;
+    --color-main: #094a88;
+    --color-transparente: #0c6cc6;
+    --color-trans-br: #094a88;
+    --transparente: transparent;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: #0000009c;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #fefefe;
+    width: 50%;
+    height: 80%;
+}
+
+.modal-txt{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/question.jpg') center no-repeat;
+    background-size: cover;
+    background-color: #0000006e;
+    background-blend-mode: soft-light;
+}
+
+.modal-txt h2{
+    color: var(--color-w);
+    text-align: center;
+    width: 90%;
+    font-size: 3vh;
+}
+
+.modal-form{
+    width: 50%;
+}
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    font-weight: 700;
+    font-size: 3vh;
+}
+
+form input, textarea{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #efefef;
+    padding: 1vh 2vh;
+}
+
+.btns{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin: 1vh 0;
+}
+
+.btns button{
+    background-color: var(--color-main);
+    border: none;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    border-radius: 10px;
+    color: var(--color-w);
+    transition: 200ms ease-in-out;
+}
+
+button:hover{
+    background-color: var(--color-transparente);
+    transition: 200ms ease-in-out;
+}
+
+#addQuestionBtn{
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: var(--color-main);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addQuestionBtn i{
+    font-size: 4vh;
+    color: var(--color-w);
+}
+
+.question-item{
+    border: 2px solid var(--color-main);
+    padding: 3vh;
+}
+
+.question-item button{
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh 1vh;
+}
+
+.question-item button:hover{
+    color: var(--color-w);
+}

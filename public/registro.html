@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="shortcut icon" href="../favicon/favicon-32x32.png" type="image/x-icon">
+    <title>Registro</title>
+</head>
+
+<body>
+    <form id="registroForm">
+        <h1>Registro</h1>
+        <input type="text" placeholder="ingresa tu nombre" required id="name">
+        <input type="email" id="email" placeholder="ingresa tu correo electronico" required>
+        <input type="password" id="password" placeholder="ingresa tu contraseña" required>
+        <input type="password" id="passwordconfirm" placeholder="verifica tu contraseña" required>
+        <input type="number" id="phone" placeholder="telefono" required>
+        <input type="number" id="age" name="edad" min="0" max="120" placeholder="ingresa tu edad" required>
+        <button type="submit" class="button">Ingresar</button>
+        <a href="./index.html">¿Ya tienes una cuenta?</a>
+    </form>
+</body>
+<script src="./js/formulario.js"></script>
+</html>
